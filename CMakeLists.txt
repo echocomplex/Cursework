@@ -5,7 +5,10 @@ PROJECT(Cursework)
 SET(CMAKE_CXX_STANDARD 23)
 SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+INCLUDE_DIRECTORIES(src/headers)
+
 ADD_EXECUTABLE(
-    Cursework main.cpp
-     
+    Cursework src/cpp/main.cpp
+    src/headers/List.hpp
+    src/cpp/List.cpp
 )

@@ -156,4 +156,5 @@ void List::edit (const int index, const student& unit) {
             thisNode = thisNode->next;
         }
         thisNode->unit = unit;
+    }
 }
