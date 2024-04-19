@@ -32,7 +32,7 @@ struct student {
 
 struct Node {
     student unit;
-    int index;
+    unsigned int index;
     Node* next;
 };
 
@@ -48,8 +48,8 @@ public:
     friend std::ostream& operator<< (std::ostream& os, const List& obj);
     ~List ();
     void append (const student& newData);
-    void remove (const int index);
-    void edit (const int index, const student& unit);
+    void remove (const unsigned int index);
+    void edit (const unsigned int index, const student& unit);
 };
 
 

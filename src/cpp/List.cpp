@@ -71,7 +71,8 @@ std::ostream& operator<< (std::ostream& os, const List& obj) {
     Node* last = obj.first;
     while (last != nullptr) {
         std::string row = 
-            last->unit.number + " " 
+            std::to_string(last->index) + " " 
+            + last->unit.number + " " 
             + last->unit.first_name + " " 
             + last->unit.last_name + " " 
             + last->unit.middle_name + " " 
@@ -118,32 +119,66 @@ void List::append (const student& newData) {
     this->last = newNode;
 }
 
-void List::remove (const int index) {
+void List::remove (const unsigned int index) {
     if (this->first == nullptr) {
         throw std::logic_error("List is empty");
     }
     else if (index < 0 || index > this->last->index) {
         throw std::out_of_range("Index is out of range");
     }
+    else if (index == 0) {
+        if (this->first->next == nullptr) {
+            delete this->first;
+            this->first = nullptr;
+            this->last = nullptr;
+        }
+        else {
+            Node* thisNode = this->first->next;
+            delete this->first;
+            this->first = thisNode;
+            while (thisNode != nullptr) {
+                thisNode->index = thisNode->index - 1;
+                thisNode = thisNode->next;
+            }
+        }
+    }
     else {
         Node* thisNode = this->first;
-        while (thisNode->next != nullptr) {
-            thisNode = thisNode->next;
-        }
-        if (thisNode->next->next == nullptr) {
+        if (this->last->index == index) {
+            while (thisNode->next->next != nullptr) {
+                thisNode = thisNode->next;
+            }
             delete thisNode->next;
             thisNode->next = nullptr;
             this->last = thisNode;
         }
         else {
-            Node* Next= thisNode->next->next;
-            delete thisNode->next;
-            thisNode->next = Next;
+            Node* lastNode = nullptr;
+            Node* toDelete = nullptr;
+            bool changeIndex = false;
+            while (thisNode->next != nullptr) {
+                if (changeIndex) {
+                    thisNode->index = thisNode->index - 1;
+                    thisNode = thisNode->next;
+                }
+                else {
+                    if (thisNode->next->index == index) {
+                        lastNode = thisNode;
+                        toDelete = thisNode->next;
+                        changeIndex = true;
+                    }
+                    thisNode = thisNode->next;
+                }
+            }
+            thisNode->index = thisNode->index - 1; 
+            lastNode->next = toDelete->next;
+            delete toDelete;
         }
     }
 }
 
-void List::edit (const int index, const student& unit) {
+void List::edit (const unsigned int index, const student& unit) {
+    std::cout << index << std::endl;
     if (this->first == nullptr) {
         throw std::logic_error("List is empty");
     }
