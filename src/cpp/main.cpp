@@ -37,12 +37,14 @@ int main () {
     std::cout << unit << std::endl;
     unit.remove(2);
     std::cout << unit << std::endl;
-    unit.edit(-2, stud1);
+    unit.edit(0, stud1);
     List unit1(unit);
     std::cout << unit1 << std::endl;
     List unit2 = unit1;
+    unit2.append(unit2.getElement(0));
     unit2.remove(0);
     std::cout << unit2 << std::endl;
+    std::cout << unit2.length() << std::endl;
 
     return 0;
 }

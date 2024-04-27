@@ -193,3 +193,28 @@ void List::edit (const unsigned int index, const student& unit) {
         thisNode->unit = unit;
     }
 }
+
+unsigned int List::length () {
+    if (this->last == nullptr) {
+        return 0;
+    }
+    else {
+        return this->last->index + 1;
+    }    
+}
+
+student List::getElement (const unsigned int index) {
+    if (this->first == nullptr) {
+        throw std::logic_error("List is empty");
+    }
+    else if (index < 0 || index > this->last->index) {
+        throw std::out_of_range("Index is out of range");
+    }
+    else {
+        Node* thisNode = this->first;
+        while (thisNode->index != index) {
+            thisNode = thisNode->next;
+        }
+        return thisNode->unit;
+    }
+}

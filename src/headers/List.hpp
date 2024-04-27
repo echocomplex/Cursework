@@ -3,10 +3,9 @@
 
 
 #include <string>
-#include <fstream>
 #include <sstream>
 #include <iostream>
-#include <vector>
+#include <fstream>
 
 
 struct grade {
@@ -21,6 +20,7 @@ struct student {
     std::string first_name;
     std::string middle_name;
     std::string last_name;
+    unsigned int year;
     std::string birthday;
     std::string faculty;
     std::string department;
@@ -50,9 +50,9 @@ public:
     void append (const student& newData);
     void remove (const unsigned int index);
     void edit (const unsigned int index, const student& unit);
+    unsigned int length ();
+    student getElement (const unsigned int index);
 };
-
-
 
 
 #endif // CURSEWORK_LIST_HPP
