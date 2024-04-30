@@ -8,8 +8,7 @@
 #include <fstream>
 
 
-template <typename T>
-struct Node {
+template <typename T> struct Node {
     T unit;
     unsigned int index;
     Node<T>* next;
@@ -26,10 +25,13 @@ public:
     List (const List& unit);
     List& operator= (const List& unit);
     T& operator[] (const unsigned int index);
+    bool operator== (List& unit) const;
     ~List ();
     void append (const T newData);
     void remove (const unsigned int index);
+    unsigned int find (T data);
     unsigned int length ();
+    bool isExists (T data);
 };
 
 
@@ -117,6 +119,10 @@ template <typename T> T& List<T>::operator[] (const unsigned int index) {
     }
 }
 
+template <typename T> bool List<T>::operator== (List& unit) const {
+    return ((unit.first == this->first) and (unit.last == this->last));
+} 
+
 template <typename T> List<T>::~List () {
     if (this->first == nullptr) {
         return;
@@ -203,6 +209,24 @@ template <typename T> void List<T>::remove (const unsigned int index) {
     }
 }
 
+template <typename T> unsigned int List<T>::find (T data) {
+    if (this->first == nullptr) {
+        throw std::logic_error("List is empty");
+    }
+    else {
+        Node<T>* thisNode = this->first;
+        while (thisNode != nullptr) {
+            if (thisNode->unit == data) {
+                return thisNode->index;
+            }
+            else {
+                thisNode = thisNode->next;
+            }
+        }
+        throw std::logic_error("DATA HAS NOT FOUND");
+    }
+}
+
 template <typename T> unsigned int List<T>::length () {
     if (this->last == nullptr) {
         return 0;
@@ -210,6 +234,24 @@ template <typename T> unsigned int List<T>::length () {
     else {
         return this->last->index + 1;
     }    
+}
+
+template <typename T> bool List<T>::isExists (T data) {
+    if (this->first == nullptr) {
+        return false;
+    }
+    else {
+        Node<T>* thisNode = this->first;
+        while (thisNode != nullptr) {
+            if (thisNode->unit == data) {
+                return true;
+            }
+            else {
+                thisNode = thisNode->next;
+            }
+        }
+        return false;
+    }
 }
 
 #endif // CURSEWORK_LIST_HPP

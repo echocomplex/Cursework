@@ -10,5 +10,6 @@ INCLUDE_DIRECTORIES(src/headers)
 ADD_EXECUTABLE(
     Cursework src/cpp/main.cpp
     src/headers/List.hpp
-    src/cpp/List.cpp
+    src/headers/Cursework.hpp
+    src/cpp/Cursework.cpp
 )

@@ -83,30 +83,30 @@ CMakeFiles/Cursework.dir/src/cpp/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cursework.dir/src/cpp/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/project-codes/C++/Cursework/src/cpp/main.cpp -o CMakeFiles/Cursework.dir/src/cpp/main.cpp.s
 
-CMakeFiles/Cursework.dir/src/cpp/List.cpp.o: CMakeFiles/Cursework.dir/flags.make
-CMakeFiles/Cursework.dir/src/cpp/List.cpp.o: src/cpp/List.cpp
-CMakeFiles/Cursework.dir/src/cpp/List.cpp.o: CMakeFiles/Cursework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/project-codes/C++/Cursework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Cursework.dir/src/cpp/List.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cursework.dir/src/cpp/List.cpp.o -MF CMakeFiles/Cursework.dir/src/cpp/List.cpp.o.d -o CMakeFiles/Cursework.dir/src/cpp/List.cpp.o -c /Users/mac/Documents/project-codes/C++/Cursework/src/cpp/List.cpp
+CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o: CMakeFiles/Cursework.dir/flags.make
+CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o: src/cpp/Cursework.cpp
+CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o: CMakeFiles/Cursework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Documents/project-codes/C++/Cursework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o -MF CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o.d -o CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o -c /Users/mac/Documents/project-codes/C++/Cursework/src/cpp/Cursework.cpp
 
-CMakeFiles/Cursework.dir/src/cpp/List.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Cursework.dir/src/cpp/List.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/project-codes/C++/Cursework/src/cpp/List.cpp > CMakeFiles/Cursework.dir/src/cpp/List.cpp.i
+CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Documents/project-codes/C++/Cursework/src/cpp/Cursework.cpp > CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.i
 
-CMakeFiles/Cursework.dir/src/cpp/List.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cursework.dir/src/cpp/List.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/project-codes/C++/Cursework/src/cpp/List.cpp -o CMakeFiles/Cursework.dir/src/cpp/List.cpp.s
+CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Documents/project-codes/C++/Cursework/src/cpp/Cursework.cpp -o CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.s
 
 # Object files for target Cursework
 Cursework_OBJECTS = \
 "CMakeFiles/Cursework.dir/src/cpp/main.cpp.o" \
-"CMakeFiles/Cursework.dir/src/cpp/List.cpp.o"
+"CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o"
 
 # External object files for target Cursework
 Cursework_EXTERNAL_OBJECTS =
 
 Cursework: CMakeFiles/Cursework.dir/src/cpp/main.cpp.o
-Cursework: CMakeFiles/Cursework.dir/src/cpp/List.cpp.o
+Cursework: CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o
 Cursework: CMakeFiles/Cursework.dir/build.make
 Cursework: CMakeFiles/Cursework.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mac/Documents/project-codes/C++/Cursework/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Cursework"

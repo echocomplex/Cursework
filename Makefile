@@ -129,29 +129,29 @@ Cursework/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/build
 .PHONY : Cursework/fast
 
-src/cpp/List.o: src/cpp/List.cpp.o
-.PHONY : src/cpp/List.o
+src/cpp/Cursework.o: src/cpp/Cursework.cpp.o
+.PHONY : src/cpp/Cursework.o
 
 # target to build an object file
-src/cpp/List.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/src/cpp/List.cpp.o
-.PHONY : src/cpp/List.cpp.o
+src/cpp/Cursework.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.o
+.PHONY : src/cpp/Cursework.cpp.o
 
-src/cpp/List.i: src/cpp/List.cpp.i
-.PHONY : src/cpp/List.i
+src/cpp/Cursework.i: src/cpp/Cursework.cpp.i
+.PHONY : src/cpp/Cursework.i
 
 # target to preprocess a source file
-src/cpp/List.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/src/cpp/List.cpp.i
-.PHONY : src/cpp/List.cpp.i
+src/cpp/Cursework.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.i
+.PHONY : src/cpp/Cursework.cpp.i
 
-src/cpp/List.s: src/cpp/List.cpp.s
-.PHONY : src/cpp/List.s
+src/cpp/Cursework.s: src/cpp/Cursework.cpp.s
+.PHONY : src/cpp/Cursework.s
 
 # target to generate assembly for a file
-src/cpp/List.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/src/cpp/List.cpp.s
-.PHONY : src/cpp/List.cpp.s
+src/cpp/Cursework.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/src/cpp/Cursework.cpp.s
+.PHONY : src/cpp/Cursework.cpp.s
 
 src/cpp/main.o: src/cpp/main.cpp.o
 .PHONY : src/cpp/main.o
@@ -186,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Cursework"
-	@echo "... src/cpp/List.o"
-	@echo "... src/cpp/List.i"
-	@echo "... src/cpp/List.s"
+	@echo "... src/cpp/Cursework.o"
+	@echo "... src/cpp/Cursework.i"
+	@echo "... src/cpp/Cursework.s"
 	@echo "... src/cpp/main.o"
 	@echo "... src/cpp/main.i"
 	@echo "... src/cpp/main.s"
