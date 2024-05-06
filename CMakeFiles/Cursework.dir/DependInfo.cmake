@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/mac/Documents/project-codes/C++/Cursework/src/Cursework.cpp" "CMakeFiles/Cursework.dir/src/Cursework.cpp.o" "gcc" "CMakeFiles/Cursework.dir/src/Cursework.cpp.o.d"
   "/Users/mac/Documents/project-codes/C++/Cursework/src/Student.cpp" "CMakeFiles/Cursework.dir/src/Student.cpp.o" "gcc" "CMakeFiles/Cursework.dir/src/Student.cpp.o.d"
   "/Users/mac/Documents/project-codes/C++/Cursework/src/main.cpp" "CMakeFiles/Cursework.dir/src/main.cpp.o" "gcc" "CMakeFiles/Cursework.dir/src/main.cpp.o.d"
   )

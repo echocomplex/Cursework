@@ -129,6 +129,30 @@ Cursework/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/build
 .PHONY : Cursework/fast
 
+src/Cursework.o: src/Cursework.cpp.o
+.PHONY : src/Cursework.o
+
+# target to build an object file
+src/Cursework.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/src/Cursework.cpp.o
+.PHONY : src/Cursework.cpp.o
+
+src/Cursework.i: src/Cursework.cpp.i
+.PHONY : src/Cursework.i
+
+# target to preprocess a source file
+src/Cursework.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/src/Cursework.cpp.i
+.PHONY : src/Cursework.cpp.i
+
+src/Cursework.s: src/Cursework.cpp.s
+.PHONY : src/Cursework.s
+
+# target to generate assembly for a file
+src/Cursework.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/src/Cursework.cpp.s
+.PHONY : src/Cursework.cpp.s
+
 src/Student.o: src/Student.cpp.o
 .PHONY : src/Student.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Cursework"
+	@echo "... src/Cursework.o"
+	@echo "... src/Cursework.i"
+	@echo "... src/Cursework.s"
 	@echo "... src/Student.o"
 	@echo "... src/Student.i"
 	@echo "... src/Student.s"

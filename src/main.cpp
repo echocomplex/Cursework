@@ -108,28 +108,30 @@ int main () {
     }
 
     switch (choice) {
-    case 1:
-        addStudent(unit);
-        break;
-    case 2:
-        deleteStudent(unit);
-        break;
-    case 3:
-        findGoodStudents(unit);
-        break;
-    case 4:
-        findBadStudents(unit);
-        break;
-    case 5:
-        splitGroup(unit);
-        break;
-    case 6:
-        std::cout << unit << std::endl;
-        break;
-    default:
-        std::cerr << "You entered wrong num! Try again." << std::endl;
-        return 1;
+        case 1:
+            addStudent(unit);
+            break;
+        case 2:
+            deleteStudent(unit);
+            break;
+        case 3:
+            findGoodStudents(unit);
+            break;
+        case 4:
+            findBadStudents(unit);
+            break;
+        case 5:
+            splitGroup(unit);
+            break;
+        case 6:
+            std::cout << unit << std::endl;
+            break;
+        default:
+            std::cerr << "You entered wrong num! Try again." << std::endl;
+            return 1;
     }
+
+    Cursework::encrypt("data.txt", "data.enc");
 
     return 0;
 }

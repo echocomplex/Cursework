@@ -81,12 +81,12 @@ clean: CMakeFiles/Cursework.dir/clean
 CMakeFiles/Cursework.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cursework.dir/build.make CMakeFiles/Cursework.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mac/Documents/project-codes/C++/Cursework/CMakeFiles --progress-num=1,2,3 "Built target Cursework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mac/Documents/project-codes/C++/Cursework/CMakeFiles --progress-num=1,2,3,4 "Built target Cursework"
 .PHONY : CMakeFiles/Cursework.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Cursework.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Documents/project-codes/C++/Cursework/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Documents/project-codes/C++/Cursework/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Cursework.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Documents/project-codes/C++/Cursework/CMakeFiles 0
 .PHONY : CMakeFiles/Cursework.dir/rule

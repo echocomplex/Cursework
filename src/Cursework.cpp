@@ -24,7 +24,7 @@ Cursework::Cursework (const std::string filename) {
                 else if (count == 6) { unit.setFaculty(word); }
                 else if (count == 7) { unit.setDepartment(word); }
                 else if (count == 8) { unit.setGroup(word); }
-                else if (count == 9) { unit.setNumber(word); }
+                else if (count == 9) { unit.setGender(word); }
                 else if (count == 10) { g.subject = word; }
                 else if (count == 11) { g.date = word; }
                 else if (count == 12) { g.mark = std::stoi(word); }
@@ -54,7 +54,7 @@ std::ostream& operator<< (std::ostream& os, Cursework& unit) {
     std::string toOut;
     for (int i = 0; i < unit.database.length(); ++i) {
         List <grade> grades = unit.database[i].getGrades();
-        for (int i = 0; i < grades.length(); ++i) {
+        for (int b = 0; b < grades.length(); ++b) {
             std::string row = 
                 unit.database[i].getNumber() + " " + 
                 unit.database[i].getFirstName() + " " + 
@@ -66,9 +66,9 @@ std::ostream& operator<< (std::ostream& os, Cursework& unit) {
                 unit.database[i].getDepartment() + " " + 
                 unit.database[i].getGroup() + " " + 
                 unit.database[i].getGender() + " " + 
-                grades[i].subject + " " + 
-                grades[i].date + " " + 
-                std::to_string(grades[i].mark) + "\n";
+                grades[b].subject + " " + 
+                grades[b].date + " " + 
+                std::to_string(grades[b].mark) + "\n";
             toOut += row;
         }
     }
