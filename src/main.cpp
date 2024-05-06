@@ -1,7 +1,7 @@
 #include <iostream>
-#include <List.hpp>
-#include <Cursework.hpp>
-#include <Student.hpp>
+#include "List.hpp"
+#include "Cursework.hpp"
+#include "Student.hpp"
 
 
 int main () {
