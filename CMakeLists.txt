@@ -8,8 +8,10 @@ SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 INCLUDE_DIRECTORIES(src/headers)
 
 ADD_EXECUTABLE(
-    Cursework src/cpp/main.cpp
-    src/headers/List.hpp
-    src/headers/Cursework.hpp
-    src/cpp/Cursework.cpp
+    Cursework src/main.cpp
+    src/List.hpp
+    src/Cursework.hpp
+    src/Cursework.cpp
+    src/Student.hpp
+    src/Student.cpp
 )

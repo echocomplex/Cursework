@@ -41,5 +41,3 @@ Student& Student::operator= (Student& unit) {
     this->gender = unit.gender;
     this->grades = unit.grades;
 }
-
-auto Studen

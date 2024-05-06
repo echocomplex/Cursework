@@ -1,9 +1,5 @@
 #include <Cursework.hpp>
 
-bool student::operator== (student& unit) const {
-    return (this->number == unit.number);
-}
-
 Cursework::Cursework () {}
 
 Cursework::Cursework (const Cursework& unit) {
@@ -17,7 +13,7 @@ Cursework::Cursework (const std::string filename) {
         while (std::getline(file, row)) {
             std::istringstream iss(row);
             std::string word;
-            student unit;
+            Student unit;
             int count = 0;
             while (iss >> word) {
                 if (count == 0) { unit.number = word; }
