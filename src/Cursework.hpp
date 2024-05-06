@@ -2,14 +2,14 @@
 #define CURSEWORK_CURSEWORK_HPP
 
 
-#include <List.hpp>
+#include "List.hpp"
 #include <sstream>
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <map>
 #include <cstdio>
-#include <Student.hpp>
+#include "Student.hpp"
 
 
 class Cursework {

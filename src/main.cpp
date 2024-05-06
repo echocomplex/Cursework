@@ -1,6 +1,6 @@
 #include <iostream>
 #include "List.hpp"
-#include "Cursework.hpp"
+//#include "Cursework.hpp"
 #include "Student.hpp"
 
 
@@ -59,7 +59,8 @@ int main () {
     // }
     // Cursework::encrypt("data.txt", "data.enc", "1234567890123456");
 
-
+    Student unit;
+    std::cout << unit.getYear() << std::endl;
 
     return 0;
 }

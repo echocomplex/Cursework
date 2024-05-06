@@ -40,4 +40,5 @@ Student& Student::operator= (Student& unit) {
     this->group = unit.group;
     this->gender = unit.gender;
     this->grades = unit.grades;
+    return *this;
 }

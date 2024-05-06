@@ -2,7 +2,7 @@
 #define CURSEWORK_STUDENT_HPP
 
 
-#include <List.hpp>
+#include "List.hpp"
 #include <string>
 #include <ostream>
 
