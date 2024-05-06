@@ -28,7 +28,7 @@ Student::Student (const std::string number, const std::string first_name, const 
     this->grades = grades;
 }
 
-Student& Student::operator= (Student& unit) {
+Student& Student::operator= (const Student& unit) {
     this->number = unit.number;
     this->first_name = unit.first_name;
     this->middle_name = unit.middle_name;
@@ -41,4 +41,8 @@ Student& Student::operator= (Student& unit) {
     this->gender = unit.gender;
     this->grades = unit.grades;
     return *this;
+}
+
+bool Student::operator== (const Student& unit1) const {
+    return (this->number == unit1.getNumber());
 }

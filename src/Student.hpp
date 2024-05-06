@@ -36,29 +36,30 @@ public:
         const unsigned short year, const std::string birthday, const std::string faculty, const std::string department,
         const std::string group, const std::string gender, const List <grade> grades
     );
-    Student& operator= (Student& unit);
-    std::string getNumber () { return this->number; }
-    std::string getFirstName () { return this->first_name; }
-    std::string getMiddleName () { return this->middle_name; }
-    std::string getLastName () { return this->last_name; }
-    unsigned short getYear () { return this->year; }
-    std::string getBirthday () { return this->birthday; }
-    std::string getFaculty () { return this->faculty; }
-    std::string getDepartment () { return this->department; }
-    std::string getGroup () { return this->group; }
-    std::string getGender () { return this->gender; }
-    List <grade> getGrades () { return this->grades; }
-    void setNumber (std::string data) { this->number = data; }
-    void setFirstName (std::string data) { this->first_name = data; }
-    void setMiddleName (std::string data) { this->middle_name = data; }
-    void setLastName (std::string data) { this->last_name = data; }
-    void setYear (unsigned short data) { this->year = data; }
-    void setBirthday (std::string data) { this->birthday = data; }
-    void setFaculty (std::string data) { this->faculty = data; }
-    void setDepartment (std::string data) { this->department = data; }
-    void setGroup (std::string data) { this->group = data; }
-    void setGender (std::string data) { this->gender = data; }
-    void setGrades (List <grade> data) { this->grades = data; }
+    Student& operator= (const Student& unit);
+    bool operator== (const Student& unit1) const;
+    std::string getNumber () const { return this->number; }
+    std::string getFirstName () const { return this->first_name; }
+    std::string getMiddleName () const { return this->middle_name; }
+    std::string getLastName () const { return this->last_name; }
+    unsigned short getYear () const { return this->year; }
+    std::string getBirthday () const { return this->birthday; }
+    std::string getFaculty () const { return this->faculty; }
+    std::string getDepartment () const { return this->department; }
+    std::string getGroup () const { return this->group; }
+    std::string getGender () const { return this->gender; }
+    List <grade> getGrades () const { return this->grades; }
+    void setNumber (const std::string data) { this->number = data; }
+    void setFirstName (const std::string data) { this->first_name = data; }
+    void setMiddleName (const std::string data) { this->middle_name = data; }
+    void setLastName (const std::string data) { this->last_name = data; }
+    void setYear (const unsigned short data) { this->year = data; }
+    void setBirthday (const std::string data) { this->birthday = data; }
+    void setFaculty (const std::string data) { this->faculty = data; }
+    void setDepartment (const std::string data) { this->department = data; }
+    void setGroup (const std::string data) { this->group = data; }
+    void setGender (const std::string data) { this->gender = data; }
+    void appendGrade (grade data) { this->grades.append(data); }
 };
 
 
