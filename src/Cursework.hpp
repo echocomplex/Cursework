@@ -27,6 +27,7 @@ public:
     void append (const Student unit);
     void remove (const unsigned int index);
     unsigned int find (const Student unit);
+    Student get (const unsigned int index);
     bool isExists (const Student unit);
     std::pair <List <Student>, List <Student>> split (std::string group);
     List <Student> findBadStudents ();

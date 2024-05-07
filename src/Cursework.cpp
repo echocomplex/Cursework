@@ -119,6 +119,10 @@ bool Cursework::isExists (const Student unit) {
     return this->database.isExists(unit);
 }
 
+Student Cursework::get (const unsigned int index) {
+    return this->database[index];
+}
+
 std::pair <List <Student>, List <Student>> Cursework::split (std::string group) {
     List <std::string> added;
     std::map <unsigned short, unsigned short> count;
