@@ -131,6 +131,8 @@ int main () {
             return 1;
     }
 
+    unit.toFile("data.txt");
+
     Cursework::encrypt("data.txt", "data.enc");
 
     return 0;
